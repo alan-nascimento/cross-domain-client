@@ -9,11 +9,12 @@ function App() {
 
   storage.onConnect()
     .then(() => storage.set('key', JSON.stringify({ foo: 'bar' })))
-    .then(() => console.warn(storage.get('any_key', 'app-1')))
-    .then(() => console.warn(storage._hub.Storage))
     .catch(console.error)
 
-  console.warn(storage.getKeys())
+  storage.onConnect()
+    .then(() => storage.getKeys)
+    .then((keys) => console.warn(keys))
+    .catch(console.error)
 
   window.crossStorage = storage
 
