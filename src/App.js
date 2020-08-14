@@ -8,10 +8,6 @@ function App() {
 
   const storage = new CrossStorageClient('https://cross-domain-server.herokuapp.com/');
 
-  storage.onConnect()
-    .then(() => storage.set('key', JSON.stringify({ foo: 'bar' })))
-    .catch(console.error)
-
   window.crossStorage = storage
 
   const getKeys = async () => {
