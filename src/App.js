@@ -13,6 +13,10 @@ function App() {
     .then(() => console.warn(storage._hub.Storage))
     .catch(console.error)
 
+  console.warn(storage.getKeys())
+
+  window.crossStorage = storage
+
   return (
     <div className="App">
       <header className="App-header">
