@@ -1,0 +1,123 @@
+:root {
+  --primary-color: #ffcc00;
+  --secondary-color: #333;
+  --background-color: #ffffff;
+  --text-color: #333;
+  --header-bg: #009739;
+  --header-text: white;
+  --border-color: #ffcc00;
+  --font-size-base: 1rem;
+  --font-size-large: 1.5rem;
+  --font-size-medium: 1.2rem;
+  --font-size-small: 0.9rem;
+  --padding-base: 1rem;
+  --padding-small: 0.5rem;
+  --max-width: 800px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--font-size-base);
+}
+
+main {
+  margin: var(--padding-base);
+  text-align: left;
+  padding: var(--padding-base);
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+h1,
+h2 {
+  font-size: var(--font-size-large);
+}
+
+p {
+  font-size: var(--font-size-medium);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+@media (max-width: 600px) {
+  h1,
+  h2 {
+    font-size: var(--font-size-medium);
+  }
+
+  p {
+    font-size: var(--font-size-base);
+  }
+}
+
+.history-list {
+  list-style: none;
+  padding: 0;
+}
+
+.history-item {
+  background: #f4f4f4;
+  padding: var(--padding-small);
+  margin: var(--padding-small) 0;
+  border-left: 0.3rem solid var(--border-color);
+  cursor: pointer;
+}
+
+.history-title {
+  background: none;
+  border: none;
+  font-size: var(--font-size-medium);
+  text-align: left;
+  width: 100%;
+  padding: var(--padding-small);
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.history-title:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+.history-details {
+  margin-top: var(--padding-small);
+  font-size: var(--font-size-small);
+  color: var(--secondary-color);
+  padding-left: var(--padding-small);
+}
+
+.history-media {
+  display: block;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flag-image {
+  display: block;
+  margin: 4rem auto;
+  max-width: 60%;
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .flag-image {
+    max-width: 90%;
+  }
+}

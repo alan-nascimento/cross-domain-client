@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History of Internet in Brazil</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="header.js" defer></script>
+    <script src="./assets/handlebars.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <custom-header></custom-header>
+    <main>
+      <div id="history-container"></div>
+    </main>
+    <script id="history-template" type="text/x-handlebars-template">
+      <ul class='history-list'>
+        {{#each history}}
+          <li class='history-item'>
+            <button
+              aria-expanded='false'
+              class='history-title'
+              aria-controls='details-{{@index}}'
+            >
+              <strong>{{year}}</strong>:
+              {{event}}
+            </button>
+            <div class='history-details' id='details-{{@index}}' hidden>
+              <p>{{details}}</p>
+              {{#if media}}
+                {{#if (eq media.type 'image')}}
+                  <img
+                    src='{{media.url}}'
+                    alt='{{media.caption}}'
+                    class='history-media'
+                  />
+                {{/if}}
+                {{#if (eq media.type 'video')}}
+                  <video controls class='history-media'>
+                    <source src='{{media.url}}' type='video/mp4' />
+                    Your browser does not support the video tag.
+                  </video>
+                {{/if}}
+                <p class='media-caption'>{{media.caption}}
+                  -
+                  <small>Source: {{media.source}}</small></p>
+              {{/if}}
+            </div>
+          </li>
+        {{/each}}
+      </ul>
+    </script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+{
+  "history": [
+    {
+      "year": "1988",
+      "event": "First experiments with email in Brazil.",
+      "details": "Researchers in Brazil started experimenting with email communication over academic networks, connecting universities and research institutions to international counterparts.",
+      "media": {
+        "type": "image",
+        "url": "./media/dial-up.png",
+        "caption": "Dial-up internet service progress.",
+        "source": "Tecnoblog (https://tecnoblog.net/responde/a-origem-do-som-da-internet-discada/)"
+      }
+    },
+    {
+      "year": "1991",
+      "event": "First Brazilian academic network connected to the global internet.",
+      "details": "RNP (Rede Nacional de Ensino e Pesquisa) was established, creating the first official Brazilian connection to the global internet. This initiative was crucial in integrating Brazil into the worldwide digital revolution."
+    },
+    {
+      "year": "1995",
+      "event": "Commercial internet service begins in Brazil.",
+      "details": "The Brazilian government authorized private ISPs to offer internet services to the public, leading to increased accessibility. This era marked the first dial-up connections available to individuals and businesses.",
+      "media": {
+        "type": "image",
+        "url": "./media/advertisement.png",
+        "caption": "TV commercials promoting internet services in Brazil.",
+        "source": "https://revistagalileu.globo.com/Tecnologia/noticia/2016/11/13-comerciais-de-tv-que-contam-historia-da-internet-no-brasil.html"
+      }
+    },
+    {
+      "year": "1996",
+      "event": "First Brazilian ISP launches broadband services.",
+      "details": "The introduction of broadband services significantly improved internet speeds, making it more viable for businesses and home users. This was a key turning point in digital inclusion in Brazil."
+    },
+    {
+      "year": "2004",
+      "event": "Orkut becomes extremely popular in Brazil.",
+      "details": "Orkut, a social networking platform by Google, became a phenomenon in Brazil, with the country representing the majority of its users. It shaped the early days of social media culture in Brazil.",
+      "media": {
+        "type": "image",
+        "url": "./media/orkut.png",
+        "caption": "Screenshot of Orkut's page during its peak popularity in Brazil.",
+        "source": "Techtudo (https://www.techtudo.com.br/listas/2020/03/orkut-voltou-cinco-coisas-sobre-site-brasileiro-que-revive-rede-social.ghtml)"
+      }
+    },
+    {
+      "year": "2010",
+      "event": "Internet penetration surpasses 50% of the population.",
+      "details": "More than half of the Brazilian population had access to the internet, driven by the expansion of mobile technology and cheaper internet plans. This marked a shift towards a digitally connected society.",
+      "media": {
+        "type": "image",
+        "url": "./media/internet-penetration-graph.png",
+        "caption": "Graph showing Brazil's internet penetration growth over the years.",
+        "source": "Statista (https://www.statista.com/statistics/209106/number-of-internet-users-per-100-inhabitants-in-brazil-since-2000/)"
+      }
+    },
+    {
+      "year": "2014",
+      "event": "Brazil passes the Marco Civil da Internet law.",
+      "details": "The Marco Civil da Internet, known as Brazil's 'Internet Constitution,' was enacted to ensure net neutrality, user privacy, and freedom of expression online. It set an international precedent for internet governance.",
+      "media": {
+        "type": "image",
+        "url": "./media/marco-civil.png",
+        "caption": "Government panel discussing the Marco Civil da Internet law.",
+        "source": "Wikipédia (https://pt.wikipedia.org/wiki/Marco_Civil_da_Internet)"
+      }
+    },
+    {
+      "year": "2020",
+      "event": "5G technology begins rollout in major cities.",
+      "details": "The implementation of 5G networks in major Brazilian cities promised faster speeds, lower latency, and new opportunities for innovation in fields such as IoT, AI, and smart cities.",
+      "media": {
+        "type": "image",
+        "url": "./media/5g.png",
+        "caption": "5G infrastructure development in São Paulo.",
+        "source": "Gov.br (https://www.gov.br/anatel/pt-br/assuntos/noticias/5g-completa-dois-anos-de-implantacao-no-brasil)"
+      }
+    }
+  ]
+}

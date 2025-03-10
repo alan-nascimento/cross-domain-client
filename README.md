@@ -1,68 +1,82 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Brazil Internet History Website
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This project is a dynamic and responsive website that explores the **history and impact of the internet in Brazil**. It uses **JSON data**, **Handlebars.js**, and **Web Components** to deliver structured and accessible content.
 
-### `yarn start`
+## Features
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Dynamic Content Rendering**: Data-driven pages using `data.json` and Handlebars templates.
+- **Web Components**: Modular and reusable **custom header** for consistency.
+- **Accessibility Improvements**: Enhanced contrast, keyboard navigation, and WCAG compliance.
+- **Responsive Design**: Mobile-friendly layouts with flexible images and text scaling.
+- **Structured Data**: Events, descriptions, media, and sources managed via JSON.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Installation & Running the Application
 
-### `yarn test`
+Since modern browsers block `fetch()` calls to local JSON files due to CORS restrictions, you need to run a local server.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **Option 1: Using Python (Recommended)**
 
-### `yarn build`
+1. Open a terminal in the project folder.
+2. Run the following command:
+   - **For Python 3:**
+     ```sh
+     python3 -m http.server 5500
+     ```
+   - **For Python 2:**
+     ```sh
+     python -m SimpleHTTPServer 5500
+     ```
+3. Open your browser and go to:
+   ```
+   http://localhost:5500/index.html
+   ```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **Option 2: Using Node.js (`http-server`)**
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+1. Install `http-server` globally:
+   ```sh
+   npm install -g http-server
+   ```
+2. Start the server in your project folder:
+   ```sh
+   http-server -p 5500
+   ```
+3. Open your browser at:
+   ```
+   http://localhost:5500/index.html
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **Option 3: Using VS Code Live Server**
 
-### `yarn eject`
+1. Install **Live Server** extension in **VS Code**.
+2. Right-click `index.html` and select **"Open with Live Server"**.
+3. The browser will open at `http://127.0.0.1:5500/` and load the application.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## How It Works
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **JSON Data Handling**: The website fetches structured content from `data.json`.
+2. **Handlebars Templates**: The templates dynamically render data into HTML.
+3. **Web Components**: `header.js` defines a reusable navigation bar.
+4. **CSS Enhancements**: Uses CSS variables, `rem` units, and flexbox for a modern layout.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Accessibility & Performance
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **Lighthouse-tested**: Contrast, readability, and navigation improvements.
+- **Keyboard Support**: Users can navigate interactive elements via keyboard.
+- **Responsive Media**: Images scale properly across devices.
 
-## Learn More
+## Future Improvements
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Add **search functionality** for historical events.
+- Implement **animations** for better engagement.
+- Expand content with **interactive elements and quizzes**.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
+This project is licensed under the **MIT License**.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+**Contributor:** Alan Nascimento
